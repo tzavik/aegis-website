@@ -1,0 +1,24 @@
+{
+    "name": "Next.js Dev Container",
+    "image": "mcr.microsoft.com/vscode/devcontainers/javascript-node:18",
+    "features": {
+      "ghcr.io/devcontainers/features/docker-in-docker:2": {}
+    },
+    "customizations": {
+      "vscode": {
+        "extensions": [
+          "dbaeumer.vscode-eslint",
+          "esbenp.prettier-vscode",
+          "ms-azuretools.vscode-docker",
+          "eamodio.gitlens"
+        ]
+      }
+    },
+    "forwardPorts": [3000],
+    "postCreateCommand": "npm install",
+    "remoteUser": "node",
+    "settings": {
+      "terminal.integrated.shell.linux": "/bin/bash"
+    }
+  }
+  
